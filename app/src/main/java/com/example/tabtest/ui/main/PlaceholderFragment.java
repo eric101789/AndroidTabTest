@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -57,7 +58,7 @@ public class PlaceholderFragment extends Fragment {
             Bundle savedInstanceState) {
 
         binding = FragmentMainBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        ConstraintLayout root = binding.getRoot();
 
         uiInit(root);
 
